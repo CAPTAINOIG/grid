@@ -1,0 +1,33 @@
+.container {
+    height: 600px;
+    background-color: blue;
+    display: grid;
+    padding: 10px;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-columns: 1fr 2fr 1fr;
+    
+
+}
+
+
+
+
+
+.grid-item {
+    /* border: 1px solid yellow; */
+    background-color: lightblue;
+    padding: 5px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.grid-item:nth-child(1) {
+    grid-column: 1/4;
+}
+.grid-item:nth-child(3) {
+    grid-row: 2/4;
+}
+.grid-item:nth-child(5){
+    grid-column: 2/4;
+}
